@@ -1,8 +1,9 @@
+import ServiceList from "../components/ServiceList"
 
 const Inicio = () => {
     return (
         <div>
-            inicio
+            <ServiceList/>
         </div>
     )
 }

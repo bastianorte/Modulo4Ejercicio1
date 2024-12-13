@@ -12,13 +12,13 @@ export default function App() {
 return (
   <div>
   <NavBar />
+  <Header />
       <Routes>
         <Route path='/' element={<Inicio/>}></Route>
         <Route path='/Equipo' element={<Equipo/>}></Route>   
         <Route path='/Contacto' element={<Contacto/>}></Route>             
       </Routes>
-  <Header />
-  <Footer classname="bottom-0" /> 
+  <Footer/> 
   </div>
   );
   }
