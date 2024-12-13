@@ -1,8 +1,9 @@
+import AppointmentForm from "../components/AppointmentForm"
 
 const Contacto = () => {
     return (
         <div>
-            Contacto
+            <AppointmentForm/>
         </div>
     )
 }

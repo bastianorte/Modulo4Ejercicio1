@@ -11,11 +11,11 @@ const iconos = [
 
 const ServiceList = () => {
     return (
-        <div className="bg-white py-24 sm:py-32">
-        <div className="mx-auto grid max-w-7xl gap-20 px-6 lg:px-8 xl:grid-cols-3">
+        <div className="bg-white py-12 sm:py-32">
+        <div className="mx-auto grid max-w-7xl gap-10 px-3 lg:px-8 xl:grid-cols-3">
         {iconos.map(({ id, nombre, texto, icon }) => (
         <div key={id} class="w-full max-w-sm border border-gray-200 rounded-lg shadow bg-light">
-        <div class="flex flex-col items-center pb-4 pt-6">
+        <div class="flex flex-col items-center p-6">
             {icon}
             <h5 class="mb-1 text-xl font-medium text-primary">{nombre}</h5>
             <span class="text-sm text-primary">{texto}</span>
