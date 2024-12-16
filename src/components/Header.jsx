@@ -1,12 +1,12 @@
-export default function Header() {
-    const appName = 'My Todo App';
-    const headerStyle = {
-    textAlign: 'center',
-    color: 'blue',
-    };
+
+
+const Header = ({ title, text, className }) => {
     return (
-    <header style={headerStyle}>
-    <h1>{appName}</h1>
-    </header>
+      <header className={className}>
+        <h2>{title}</h2>
+        <p>{text}</p>
+      </header>
     );
-    }
+  };
+
+  export default Header;

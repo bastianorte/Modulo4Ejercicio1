@@ -1,5 +1,5 @@
 
-import Header from './components/Header';
+
 import NavBar from './components/navbar';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Inicio from './pages/Inicio';
@@ -12,7 +12,6 @@ export default function App() {
 return (
   <div>
   <NavBar />
-  <Header />
       <Routes>
         <Route path='/' element={<Inicio/>}></Route>
         <Route path='/Equipo' element={<Equipo/>}></Route>   

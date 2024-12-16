@@ -1,5 +1,6 @@
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import { NavLink } from 'react-router-dom'
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const navigation = [
   { name: 'Inicio', to: '/', current: true  },
@@ -19,7 +20,7 @@ export default function NavBar() {
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             {/* Mobile menu button*/}
             <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
-              <span className="absolute -inset-0.5" />
+              <span className="absolute -inset-0.5" /><GiHamburgerMenu className='text-white' />
               <span className="sr-only">Open main menu</span>
             </DisclosureButton>
           </div>
