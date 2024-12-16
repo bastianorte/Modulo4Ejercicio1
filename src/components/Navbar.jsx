@@ -1,6 +1,6 @@
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import { NavLink } from 'react-router-dom'
-import { GiHamburgerMenu } from "react-icons/gi";
+import { GiHamburgerMenu, GiWhiteBook } from "react-icons/gi";
 
 const navigation = [
   { name: 'Inicio', to: '/', current: true  },
@@ -32,7 +32,7 @@ export default function NavBar() {
                 className="h-8 w-auto"
               />
             </div>
-            <div className="hidden sm:ml-6 sm:block">
+            <div className="hidden sm:ml-6 sm:block right-0 absolute">
 
               <div className="flex space-x-4">
                 {navigation.map((item) => (                                
@@ -40,13 +40,17 @@ export default function NavBar() {
                     key={item.name}
                     to={item.to}
                     className={({ isActive }) =>
-                      isActive ? "text-white font-bold" : undefined
+                      isActive ? "text-white font-bold" : "text-secondary"
                     }
                   >
                     {item.name}
                   </NavLink>
                 ))}
+              
               </div>
+
+
+
             </div>
           </div>
           <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
